@@ -1,0 +1,93 @@
+default_load_dir: /home/ben/Downloads
+default_save_dir: /home/ben/Downloads
+diff_properties:
+    - category
+    - item_code
+    - manufacturer_pn
+    - name
+    - quantity
+    - revision
+    - suggested_manufacturer
+    - suggested_vendor
+    - vendor_pn
+filters:
+    category:
+        equivalent_to: []
+        filters:
+            - Category
+        is_critical: false
+        name: category
+        type: str
+    item_code:
+        equivalent_to: []
+        filters:
+            - Part number
+        is_critical: true
+        name: item_code
+        type: str
+    manufacturer_pn:
+        equivalent_to: []
+        filters:
+            - Manufacturer PN
+        is_critical: false
+        name: manufacturer_pn
+        type: str
+    name:
+        equivalent_to: []
+        filters:
+            - Name
+        is_critical: false
+        name: name
+        type: str
+    quantity:
+        equivalent_to: []
+        filters:
+            - Quantity
+        is_critical: false
+        name: quantity
+        type: convert_qty
+    revision:
+        equivalent_to: []
+        filters:
+            - Revision
+        is_critical: false
+        name: revision
+        type: convert_rev
+    suggested_manufacturer:
+        equivalent_to: []
+        filters:
+            - Suggested Manufacturer
+        is_critical: false
+        name: suggested_manufacturer
+        type: str
+    suggested_vendor:
+        equivalent_to: []
+        filters:
+            - Suggested Vendor
+        is_critical: false
+        name: suggested_vendor
+        type: str
+    vendor_pn:
+        equivalent_to: []
+        filters:
+            - Vendor PN
+        is_critical: false
+        name: vendor_pn
+        type: str
+ignored_categories: []
+left_bom: /home/ben/Downloads/BOM_Backpack.csv
+left_type: onshape
+primary_prop: item_code
+right_bom: /home/ben/Downloads/BOM_Backpack-edited.csv
+right_type: onshape
+show_common: false
+show_properties:
+    - category
+    - item_code
+    - manufacturer_pn
+    - name
+    - quantity
+    - revision
+    - suggested_manufacturer
+    - suggested_vendor
+    - vendor_pn
